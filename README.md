@@ -75,7 +75,7 @@ New exchanges and markets are added regularly.
 
 - **Website** — [moonbot.pro](https://moonbot.pro)
 - **Documentation** — [moonbot.pro/documentation](https://moonbot.pro/documentation)
-- **Trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
+- **Public trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
 - **Telegram** — [@MoonbotNews](https://t.me/MoonbotNews)
 
 ---
