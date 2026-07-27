@@ -14,6 +14,7 @@
 <p align="center">
   <a href="https://moonbot.pro"><img src="https://img.shields.io/badge/website-moonbot.pro-4C6EF5" alt="Website"></a>
   <img src="https://img.shields.io/badge/since-2017-6B7280" alt="Since 2017">
+  <a href="https://t.me/MoonbotNews"><img src="https://img.shields.io/badge/Telegram-MoonbotNews-26A5E4?logo=telegram&logoColor=white" alt="Telegram"></a>
 </p>
 
 <p align="center">
@@ -74,7 +75,8 @@ New exchanges and markets are added regularly.
 
 - **Website** — [moonbot.pro](https://moonbot.pro)
 - **Documentation** — [moonbot.pro/documentation](https://moonbot.pro/documentation)
-- **Public trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
+- **Trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
+- **Telegram** — [@MoonbotNews](https://t.me/MoonbotNews)
 
 ---
 
