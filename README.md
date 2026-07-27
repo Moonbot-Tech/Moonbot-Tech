@@ -14,8 +14,6 @@
 <p align="center">
   <a href="https://moonbot.pro"><img src="https://img.shields.io/badge/website-moonbot.pro-4C6EF5" alt="Website"></a>
   <img src="https://img.shields.io/badge/since-2017-6B7280" alt="Since 2017">
-  <img src="https://img.shields.io/badge/built%20with-Rust-DEA584?logo=rust&logoColor=white" alt="Built with Rust">
-  <img src="https://img.shields.io/badge/license-Apache--2.0-4C6EF5" alt="License: Apache-2.0">
 </p>
 
 <p align="center">
@@ -75,7 +73,7 @@ New exchanges and markets are added regularly.
 ## Links
 
 - **Website** — [moonbot.pro](https://moonbot.pro)
-- **Documentation** — [moonbot.eu/documentation](https://moonbot.eu/documentation)
+- **Documentation** — [moonbot.pro/documentation](https://moonbot.pro/documentation)
 - **Public trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
 
 ---
