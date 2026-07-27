@@ -43,7 +43,7 @@ Moonbot is architecturally split: an execution **core** can run on a VPS close t
 | Repository | What it is | Language |
 |---|---|---|
 | [**MoonTerminal**](https://github.com/Moonbot-Tech/MoonTerminal) | Development repository for the Moonbot cross-platform terminal | Rust |
-| [**MoonProto**](https://github.com/Moonbot-Tech/MoonProtoBeta) | Client-side runtime SDK for building MoonBot-compatible terminals, dashboards, and control tools over a running MoonBot core | Rust |
+| [**MoonProto**](https://github.com/Moonbot-Tech/MoonProto) | Client-side runtime SDK for building MoonBot-compatible terminals, dashboards, and control tools over a running MoonBot core | Rust |
 | [**MoonUI**](https://github.com/Moonbot-Tech/MoonUI) | User interface layer for MoonTerminal | Rust |
 | [**TradesLag**](https://github.com/Moonbot-Tech/TradesLag) | Measurement tool for trade stream latency across exchanges | Rust |
 
