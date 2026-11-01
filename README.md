@@ -41,6 +41,7 @@ Moonbot is architecturally split: an execution **core** can run on a VPS close t
 
 | Repository | What it is | Language |
 |---|---|---|
+| [**MoonDoc**](https://github.com/Moonbot-Tech/MoonDoc) | Knowledge base for traders and AI assistants: crypto scalping, trading strategies, terminal mechanics, kernel settings and integrations | Markdown |
 | [**MoonTerminal**](https://github.com/Moonbot-Tech/MoonTerminal) | Development repository for the Moonbot cross-platform terminal | Rust |
 | [**MoonProto**](https://github.com/Moonbot-Tech/MoonProto) | Client-side runtime SDK for building MoonBot-compatible terminals, dashboards, and control tools over a running MoonBot core | Rust |
 | [**MoonUI**](https://github.com/Moonbot-Tech/MoonUI) | User interface layer for MoonTerminal | Rust |
@@ -75,6 +76,7 @@ New exchanges and markets are added regularly.
 
 - **Website** — [moonbot.pro](https://moonbot.pro)
 - **Documentation** — [moonbot.pro/documentation](https://moonbot.pro/documentation)
+- **Knowledge base for traders and AI** — [MoonDoc](https://github.com/Moonbot-Tech/MoonDoc)
 - **Public trading statistics** — [stat.moonbot.pro](https://stat.moonbot.pro)
 - **Telegram** — [@MoonbotNews](https://t.me/MoonbotNews)
 
