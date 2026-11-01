@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title description">
+  <title id="title">Moonbot architecture: exchanges, execution kernel and client applications</title>
+  <desc id="description">The Moonbot kernel connects directly to exchange APIs and manages orders, strategies, risk and trading state on your VPS or local machine. MoonTerminal and custom applications use the MoonProto SDK to receive data and send commands over UDP. Kernel trading continues when a client disconnects.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111c2b"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="kernel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#142d28"/>
+      <stop offset="1" stop-color="#122329"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.7" fill="#324358" opacity="0.36"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="478" rx="24" fill="url(#background)" stroke="#28384b"/>
+  <rect x="2" y="2" width="1196" height="476" rx="23" fill="url(#grid)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g font-size="12" font-weight="600" letter-spacing="2" fill="#a4b5ca">
+      <text x="36" y="36">MARKETS</text>
+      <text x="422" y="36">EXECUTION</text>
+      <text x="874" y="36">CONTROL &amp; TOOLS</text>
+    </g>
+
+    <rect x="32" y="58" width="250" height="316" rx="18" fill="#162233" stroke="#33465e"/>
+    <g transform="translate(56 82)" fill="none" stroke="#79baf5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 24V14m8 10V4m8 20V10m8 14V0"/>
+    </g>
+    <text x="56" y="143" fill="#f1f5fa" font-size="26" font-weight="600">Exchanges</text>
+    <text x="56" y="169" fill="#aebed0" font-size="16">Spot · Futures · DEX</text>
+    <path d="M56 191H258" stroke="#304158"/>
+    <g fill="#dce6f1" font-size="17">
+      <text x="56" y="228">Binance · Bybit · OKX</text>
+      <text x="56" y="261">Gate · Bitget · HTX</text>
+      <text x="56" y="294">Hyperliquid</text>
+    </g>
+    <text x="56" y="347" fill="#9aaec6" font-size="15">Direct exchange APIs</text>
+
+    <rect x="418" y="58" width="300" height="316" rx="18" fill="url(#kernel)" stroke="#427655"/>
+    <rect x="442" y="81" width="30" height="27" rx="5" fill="#203d31" stroke="#6ad581"/>
+    <g stroke="#6ad581" stroke-width="1.6" stroke-linecap="round">
+      <path d="M450 88h14m-14 6h14m-14 6h7"/>
+    </g>
+    <circle cx="465" cy="101" r="2" fill="#6ad581"/>
+    <text x="442" y="143" fill="#f1f8f3" font-size="26" font-weight="600">Moonbot kernel</text>
+    <text x="442" y="169" fill="#b2c6bb" font-size="16">Your VPS or local machine</text>
+    <path d="M442 191H694" stroke="#315247"/>
+    <g fill="#dcece2" font-size="17">
+      <circle cx="447" cy="222" r="3" fill="#6ad581"/>
+      <text x="460" y="228">Orders &amp; positions</text>
+      <circle cx="447" cy="255" r="3" fill="#6ad581"/>
+      <text x="460" y="261">Strategies &amp; risk controls</text>
+      <circle cx="447" cy="288" r="3" fill="#6ad581"/>
+      <text x="460" y="294">Balances &amp; trading state</text>
+    </g>
+    <rect x="442" y="326" width="252" height="30" rx="8" fill="#1d3b2d"/>
+    <text x="568" y="346" text-anchor="middle" fill="#a4e7b7" font-size="14">Trade execution stays here</text>
+
+    <rect x="870" y="58" width="298" height="316" rx="18" fill="#162233" stroke="#33465e"/>
+    <g transform="translate(894 82)" fill="none" stroke="#b5abf5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect width="30" height="21" rx="3"/>
+      <path d="M15 21v6m-7 0h14"/>
+    </g>
+    <text x="894" y="143" fill="#f1f5fa" font-size="26" font-weight="600">Client applications</text>
+    <text x="894" y="169" fill="#aebed0" font-size="16">The trader's workspace</text>
+    <rect x="894" y="192" width="250" height="57" rx="10" fill="#202d41"/>
+    <text x="910" y="215" fill="#eeeaff" font-size="18" font-weight="600">MoonTerminal</text>
+    <text x="910" y="236" fill="#b8c5d7" font-size="14">Charts and manual control</text>
+    <rect x="894" y="259" width="250" height="57" rx="10" fill="#202d41"/>
+    <text x="910" y="282" fill="#eeeaff" font-size="18" font-weight="600">Your applications</text>
+    <text x="910" y="303" fill="#b8c5d7" font-size="14">Dashboards and automation</text>
+    <rect x="894" y="326" width="250" height="30" rx="8" fill="#2c2c49"/>
+    <text x="1019" y="346" text-anchor="middle" fill="#d0c6ff" font-size="14">Built with the MoonProto Rust SDK</text>
+
+    <g text-anchor="middle" font-size="15">
+      <text x="350" y="187" fill="#a6c9ed">Trades &amp; books</text>
+      <path d="M298 209H402m-6-4 6 4-6 4" fill="none" stroke="#79baf5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M402 274H298m6-4-6 4 6 4" fill="none" stroke="#79dc9c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="350" y="302" fill="#a3d8b4">Order actions</text>
+
+      <text x="794" y="115" fill="#d6d4fa" font-size="18" font-weight="600">MoonProto</text>
+      <text x="794" y="137" fill="#a3a7c3" font-size="13" letter-spacing="1.5">UDP</text>
+      <text x="794" y="183" fill="#a6c9ed">Market data</text>
+      <text x="794" y="202" fill="#a6c9ed">&amp; trading state</text>
+      <path d="M734 221H854m-6-4 6 4-6 4" fill="none" stroke="#79baf5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M854 274H734m6-4-6 4 6 4" fill="none" stroke="#79dc9c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="794" y="302" fill="#a3d8b4">Commands</text>
+      <text x="794" y="321" fill="#a3d8b4">&amp; settings</text>
+    </g>
+
+    <rect x="32" y="400" width="1136" height="50" rx="12" fill="#152b27" stroke="#294a3c"/>
+    <circle cx="60" cy="425" r="10" fill="#294b37"/>
+    <path d="m55 425 3 3 6-6" fill="none" stroke="#8ed9a4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="83" y="431" fill="#c1deca" font-size="17">Strategies and order management keep running when a client disconnects.</text>
+  </g>
+</svg>

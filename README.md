@@ -49,21 +49,15 @@ Moonbot is architecturally split: an execution **core** can run on a VPS close t
 
 ## Architecture
 
-```
-   Exchange APIs                MoonBot Core                Client
-  ─────────────────           ────────────────           ────────────
-  Binance · Bybit             orders, strategies         MoonTerminal
-  HTX · Gate · Bitget   <──>  risk logic, balances  <──> or any tool
-  Hyperliquid                 authoritative state         built on
-  spot · futures              (runs on VPS or local)      MoonProto
-                                                    │
-                                              MoonProto
-                                            UDP transport
-```
+<p align="center">
+  <a href="https://github.com/Moonbot-Tech/Moonbot-Tech/blob/main/assets/moonbot-architecture.svg">
+    <img src="https://raw.githubusercontent.com/Moonbot-Tech/Moonbot-Tech/main/assets/moonbot-architecture.svg" width="1040" alt="Exchanges connect to the Moonbot kernel. MoonTerminal and custom applications receive market data and send commands through MoonProto. Trading continues on the kernel when a client disconnects.">
+  </a>
+</p>
 
-The core is the execution engine — it owns exchange connections, orders, strategies, risk logic, and authoritative trading state. **MoonProto** is the client-side bridge to that core: transport, authorization, reconnect, subscriptions, retained state, events, and typed user intents. Applications built on MoonProto handle UI and product logic; they never talk to exchanges directly.
+The **Moonbot kernel** owns exchange connections, order execution, strategies and risk controls. Run it close to the exchange while keeping your interface on your own computer.
 
-This separation is what allows the execution engine to sit in a datacenter next to the exchange while the trader works from anywhere — and to keep managing an open position if the client connection drops.
+**MoonProto** carries market data and trading state to the client, and commands back to the kernel. Its Rust SDK handles authorization, reconnection and subscriptions for **MoonTerminal** and custom applications.
 
 ## Supported Exchanges
 
